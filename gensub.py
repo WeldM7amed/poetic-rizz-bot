@@ -1,5 +1,9 @@
+import os
 f = open('rizzourses.txt', 'r')
 i = 0
+directory = os.getcwd()
+dir_path = directory+'\\subs'
+os.mkdir(dir_path)
 while True:
     line = f.readline()
     if not line:

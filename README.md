@@ -19,7 +19,5 @@ To use Poetic Rizz Bot:
     - Run getrizz.py to generate the poems and put them in the rizzourses.txt file
     - Clean the rizzourses.txt file
 - Or : just edit the rizzourses.txt file and add a poem for each line
-- Edit the gensub.py file :
-    - add the path of folder you are working on
 - Run gensub.py to generate the SRT files needed for the video generation
 - Run genrizz.py to generate the videos
