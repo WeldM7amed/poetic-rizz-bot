@@ -1,5 +1,9 @@
 import os
-dir_path = r'PATH\subs' # SUBS FOLDER PATH
+directory = os.getcwd()
+dir_path = directory+'\subs'
+rizz = directory+'\\rizz'
+os.mkdir(rizz)
+
 count = 0
 for path in os.listdir(dir_path):
     if os.path.isfile(os.path.join(dir_path, path)):
