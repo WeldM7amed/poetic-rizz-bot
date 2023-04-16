@@ -9,7 +9,6 @@ You need this following tools to be installed on your machine for  the bot to wo
 - Chromedriver
 - Selenium
 
-
 ## Usage
 
 To use Poetic Rizz Bot:

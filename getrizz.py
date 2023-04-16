@@ -1,3 +1,6 @@
+path = r'PATH\chromedriver.exe' #ADD THE PATH TO THE chromedriver.exe HERE
+amount = 2 #SET THE AMOUT OF POEMS YOU NEED
+
 import time
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
@@ -6,13 +9,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 file = open('rizzourses.txt', 'a')
-p=r'C:\Users\Ben Yedder\Downloads\chromedriver_win32\chromedriver.exe'
 
-with Chrome(executable_path=p) as driver:
+with Chrome(executable_path=path) as driver:
     wait = WebDriverWait(driver,15)
     driver.get("https://www.youtube.com/watch?v=jKM-n5KMTM4")
 
-    for item in range(2): 
+    for item in range(amount): 
         wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body"))).send_keys(Keys.END)
         time.sleep(15)
 
