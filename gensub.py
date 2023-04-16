@@ -1,4 +1,4 @@
-path = "PATH" #ADD THE PATH FOR THE FOLDER
+path = r"PATH" #ADD THE PATH FOR THE CURRENT FOLDER
 f = open('rizzourses.txt', 'r')
 i = 0
 while True:
